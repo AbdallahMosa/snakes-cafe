@@ -8,7 +8,7 @@ def order():
     final_order = {}
     count_of_order = 0
     while res != "quit":
-        order = input("> ")
+        order = input("> ").lower()
        
         if order == "quit":
             print("Your order contains")
@@ -16,7 +16,7 @@ def order():
                 print(key, ' : ', value+1)
             print("thank you and Good Bye")
             break
-        if order.lower() in  my_menu:
+        if order in  my_menu:
             final_order.update({f"{order}": my_menu[order]})
             new_order = order
             count_of_order +=1
@@ -29,7 +29,7 @@ def order():
 print("****************************************")
 print("**     welcome to the Sankes Cafe!    **")
 print("**     Please see our menu below.     **")
-print("**")
+print("** ")
 print("** To quit at any time, type \"quit\"  **")
 print("****************************************")
 format_menu= """Appetizers
