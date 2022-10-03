@@ -1,4 +1,7 @@
-# Lab Class 1 
+# LAB - Class 1
+## Project: Project snakes-cafe
+
+### Author: Abdallah Mosa
 ### Create virtual environment
 
 - > python3 -m venv .venv Or  python -m venv .venv
@@ -7,5 +10,5 @@
 
 - > source .venv/bin/activate
 
-### How to run the file 
-- > python snakes_cafe.py
+#### How to initialize/run your application (where applicable)
+- > python snakes_cafe.py Or python -m snakes_cafe
